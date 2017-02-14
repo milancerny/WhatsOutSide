@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WhatsOutSide</string>
+    <string name="change_city">Change city</string>
+    <string name="hint">Bratislava,sk</string>
+</resources>

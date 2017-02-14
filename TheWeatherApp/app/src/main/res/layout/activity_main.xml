@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:background="@drawable/snow"
+    tools:context="com.example.mcerny.theweatherapp.MainActivity">
+
+    <TextView
+        android:id="@+id/cityText"
+        android:textColor="#fff"
+        android:text="Bratislava"
+        android:layout_marginTop="25sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#032740"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:textAllCaps="true"
+        android:shadowRadius="1.6" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="150sp"
+        android:layout_height="1px"
+        android:layout_marginTop="86sp"
+        android:layout_marginLeft="90sp"
+        android:alpha="0.6"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/currentDate"
+        android:layout_below="@id/line"
+        android:textColor="#fff"
+        android:text="2099-12-31"
+        android:layout_marginTop="5sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#032740"
+        android:shadowDx="2.8"
+        android:shadowDy="1.9"
+        android:textAllCaps="true"
+        android:shadowRadius="1.6"
+        />
+
+    <ImageView
+        android:id="@+id/oval"
+        android:layout_below="@id/currentDate"
+        android:layout_width="400sp"
+        android:layout_height="300sp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.7"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/roundimage" />
+
+    <ImageView
+        android:id="@+id/thumbnailIcon"
+        android:layout_below="@id/currentDate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="8dp"
+        />
+
+    <TextView
+        android:id="@+id/windText"
+        android:text="22km/h wind force"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:layout_below="@id/currentDate"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cloudText"
+        android:text="Cloud"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:layout_below="@id/windText"
+        android:layout_marginTop="100dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/cloudText"
+        android:layout_width="40sp"
+        android:layout_height="1px"
+        android:layout_marginTop="3sp"
+        android:layout_marginLeft="145sp"
+        android:alpha="0.6"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tempText"
+        android:text="12 °C"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="0dp"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+    />
+
+    <TextView
+        android:id="@+id/humidText"
+        android:text="82% humidity"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:layout_below="@id/tempText"
+        android:layout_marginTop="48dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/updateText"
+        android:text="Last update"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_below="@id/humidText"
+        android:layout_marginTop="40dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton2"
+        android:background="@android:color/transparent"
+        android:onClick="showInfo" />
+
+</RelativeLayout>
