@@ -1,7 +1,10 @@
 # WhatsOutSide :octocat:
 School project for Android subject. The basic concept for the request. 
-Sample parse JSON objects.
+Sample for parse JSON objects. 
 
+This application is using RelativeLayout.
+
+Developed in Android Studio 2.2.3
 
 ## OpenWeathermap
 Based on [https://openweathermap.org/]()
