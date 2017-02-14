@@ -8,7 +8,10 @@ Based on [https://openweathermap.org/]()
 
 Weather conditions [https://openweathermap.org/weather-conditions]()
 
-## Example respons body
+## Sample request
+
+http://api.openweathermap.org/data/2.5/weather?q=Bratislava=metric&appid=<YOUR API KEY>
+
 ```javascript
 {
    "coord":{
